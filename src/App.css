@@ -1,32 +1,39 @@
 .App {
   text-align: center;
+  background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height:100%;
+  width:100%;
+  padding:1rem;
+  padding-left:1.3rem;
+  padding-right:1.3rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.dogpic {
+  height: 400px;
+  max-width: 80%;
+  margin-top:20px;
+  border-radius:8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.txtChange {
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.formClass input {
+  border-radius: 5px;
+  margin-right: 1.2rem;
+  height: 30px;
+  box-shadow: 1px 2px 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formClass input:focus {
+  outline:none;
+}
+
+.descContainer {
+  width:90%;
+  margin:auto;
 }
